@@ -1,0 +1,38 @@
+{
+  "name": "ADBlocker",
+  "version": "0.0.2",
+  "description": "屏蔽网页广告",
+  "manifest_version": 2,
+  "author": "Ray Rao",
+  "homepage_url": "http://www.raofeng.cn",
+  "icons": {
+    "19": "images/icon.19.png",
+    "38": "images/icon.38.png",
+    "48": "images/icon.48.png",
+    "64": "images/icon.64.png",
+    "128": "images/icon.128.png",
+    "256": "images/icon.256.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon.19.png",
+      "38": "images/icon.38.png",
+      "48": "images/icon.48.png",
+      "64": "images/icon.64.png",
+      "128": "images/icon.128.png",
+      "256": "images/icon.256.png"
+    },
+    "default_title": "ADBlocker",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/jquery.min.js", "js/adb.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

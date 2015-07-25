@@ -1,0 +1,12 @@
+.panel-title{
+  font-family: 'Microsoft Yahei', Verdana;
+}
+div.adb_container {
+  font-size: 14px;
+  width: 400px;
+  font-family: 'Microsoft Yahei', Verdana;
+}
+div.adb_container h3, div.adb_container h5 {
+  margin: 0;
+  padding: 0;
+}
